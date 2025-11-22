@@ -42,6 +42,8 @@ To write a Python program to define the abstract base class named Polygon and al
 18.End the Program.
 # PROGRAM
 ```
+# REGNO:212222060229
+# Name:-sarvesan lathika
 from abc import ABC
 class Polygon(ABC):   
   
