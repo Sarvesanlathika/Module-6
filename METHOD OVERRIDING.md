@@ -1,43 +1,47 @@
-# Exp.No:26  
-## Method Overriding
+# Exp.No:29
+## Encapsulation
+# AIM
+To write a Python program to create a class Student with the private members name and age, and add getter and setter methods to initialize and modify the age variable.
 
----
+# ALGORITHM
+1.Start the Program.
+2.Define the Student class.
+3.Inside the Student class, define the __init__ method to initialize name and the private member __age.
+4.Define a getter method get_age to return the value of the private member __age.
+5.Define a setter method set_age to set a new value to the private member __age.
+6.Create an object stud of the Student class with the name 'Jessa' and age 14.
+7.Print the name and the age of stud using the getter method.
+8.Use the setter method set_age to change the age of stud to 16.
+9.Print the name and the updated age of stud using the getter method.
+10.End the program.
 
-### AIM  
-To write a Python program to create a Parent class `Bird` and inherit two child classes `Sparrow` and `Ostrich` from the `Bird` class with the same method `flight()`. Create an object for each class and call the methods of the class which will print the name of the bird that is flying.
+# PROGRAM
+```
+Reg.No: 212222060229
+Name:sarvesan lathika
 
----
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.__age = age
+    def get_age(self):
+        return self.__age
+    def set_age(self, age):
+        self.__age=age
+    def get_name(self):
+        return self.__name
 
-### ALGORITHM
 
-1. **Begin the program.**
-2. **Define the Bird class**:
-   - Create a method `intro()` to print "There are many types of birds."
-   - Create a method `flight()` to print "Most of the birds can fly but some cannot."
-3. **Define the Sparrow class**, which inherits from `Bird`:
-   - Override the `flight()` method.
-   - Call the `intro()` method from the parent class.
-   - Print "Sparrows can fly."
-4. **Define the Ostrich class**, which inherits from `Bird`:
-   - Override the `flight()` method.
-   - Call the `intro()` method from the parent class.
-   - Print "Ostriches cannot fly."
-5. **Create an object `obj_bird`** of the `Bird` class.
-6. **Create an object `obj_spr`** of the `Sparrow` class.
-7. **Create an object `obj_ost`** of the `Ostrich` class.
-8. **Print the general message** "There are many types of birds."
-9. **Call the `flight()` method** on each object (`obj_bird`, `obj_spr`, `obj_ost`) to display the respective messages.
-10. **Terminate the program.**
+stud = Student('Jessa', 14)
 
----
-
-### PROGRAM
-
+print('Name:', stud.name, stud.get_age())
+stud.set_age(16)
+print('Name:', stud.name, stud.get_age())
 ```
 
-```
+# OUTPUT
+<img width="487" height="179" alt="image" src="https://github.com/user-attachments/assets/d4cfe9c0-aa4e-4800-892f-f71f687ce879" />
 
-### OUTPUT
 
-
-### RESULT
+# RESULT
+Thus the python program to create a class Student with the private members name and age, and add getter and setter methods has been executed.
