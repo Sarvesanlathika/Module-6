@@ -1,47 +1,53 @@
-# Exp.No:29
-## Encapsulation
+# Exp.No:26
+## Method Overriding
 # AIM
-To write a Python program to create a class Student with the private members name and age, and add getter and setter methods to initialize and modify the age variable.
+To write a Python program to demonstrate polymorphism by creating two classes India and USA with the same method names (capital(), language(), and type()) and then accessing them using a common interface.
 
 # ALGORITHM
-1.Start the Program.
-2.Define the Student class.
-3.Inside the Student class, define the __init__ method to initialize name and the private member __age.
-4.Define a getter method get_age to return the value of the private member __age.
-5.Define a setter method set_age to set a new value to the private member __age.
-6.Create an object stud of the Student class with the name 'Jessa' and age 14.
-7.Print the name and the age of stud using the getter method.
-8.Use the setter method set_age to change the age of stud to 16.
-9.Print the name and the updated age of stud using the getter method.
-10.End the program.
-
+1.Start the program.
+2.Define the class India with methods capital(), language(), and type().
+3.Define the class USA with the same methods capital(), language(), and type().
+4.Create objects obj_ind for the India class and obj_usa for the USA class.
+5.Use a for loop to iterate through the objects and call the common methods.
+6.Display the output for both countries.
+7.End the program.
 # PROGRAM
 ```
 Reg.No: 212222060229
-Name:sarvesan lathika
+Name: sarvesan lathika
 
-class Student:
-    def __init__(self, name, age):
-        self.name = name
-        self.__age = age
-    def get_age(self):
-        return self.__age
-    def set_age(self, age):
-        self.__age=age
-    def get_name(self):
-        return self.__name
+class India():
+    
+	def capital(self):
+		print("New Delhi is the capital of India.")
 
+	def language(self):
+		print("Hindi is the most widely spoken language of India.")
 
-stud = Student('Jessa', 14)
+	def type(self):
+		print("India is a developing country.")
 
-print('Name:', stud.name, stud.get_age())
-stud.set_age(16)
-print('Name:', stud.name, stud.get_age())
+class USA():
+    
+	def capital(self):
+		print("Washington, D.C. is the capital of USA.")
+
+	def language(self):
+		print("English is the primary language of USA.")
+	def type(self):
+		print("USA is a developed country.")
+
+obj_ind = India()
+obj_usa = USA()
+
+for country in (obj_ind, obj_usa):
+    country.capital()
+    country.language()
+    country.type()
 ```
 
 # OUTPUT
-<img width="487" height="179" alt="image" src="https://github.com/user-attachments/assets/d4cfe9c0-aa4e-4800-892f-f71f687ce879" />
-
+<img width="1058" height="276" alt="image" src="https://github.com/user-attachments/assets/2f067652-908f-4027-8336-6d76068cc7b8" />
 
 # RESULT
-Thus the python program to create a class Student with the private members name and age, and add getter and setter methods has been executed.
+Thus, the program to demonstrate polymorphism using two classes was executed successfully and the output was verified.
