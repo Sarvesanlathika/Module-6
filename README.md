@@ -7,7 +7,7 @@ Start the Program. Import the ABC class from the abc module to implement abstrac
 
 # PROGRAM
 ~~~
-Reg-212222060245 Name-Singamala Rakshitha
+Reg-212222060229 Name-sarvesan lathika
 from abc import ABC  
   
 class Polygon(ABC):   
@@ -61,7 +61,7 @@ Start the Program. Define the Counter class. Initialize the current variable wit
 
 # PROGRAM
 ~~~
-Reg - 212222060245 Name - Singamala Rakshitha
+Reg-212222060229 Name-sarvesan lathika
 class Counter:
     def __init__(self):   # constructor (initializes object attributes)
         self.current = 0
@@ -97,7 +97,7 @@ Start the Program. Define the Student class. Inside the Student class, define th
 
 # PROGRAM
 ~~~
-Reg - 212222060245 Name - Singamala Rakshitha
+Reg-212222060229 Name-sarvesan lathika
 class Student:
     def __init__(self, name, roll_no, age):
         self.name = name
@@ -140,7 +140,7 @@ Begin the program. Define the Bird class: Create a method intro() to print "Ther
 
 # PROGRAM
 ~~~
-Reg - 212222060245 Name - Singamala Rakshitha
+Reg-212222060229 Name-sarvesan lathika
 class Bird:
     def intro(self):
         print("There are many types of birds.")
@@ -186,7 +186,7 @@ Start the Program. Define the Complex class: Define the constructor init() to ac
 
 # PROGRAM
 ~~~
-Reg - 212222060245 Name - Singamala Rakshitha
+Reg-212222060229 Name-sarvesan lathika
 class complex:
     def init(self,a,b):
         self.a=a
